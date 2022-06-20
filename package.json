@@ -1,0 +1,26 @@
+{
+  "name": "brave-enough",
+  "version": "1.0.0",
+  "description": "Web Application with Back-end and server-site templating",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvoKarapeev/Brave-Enough.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvoKarapeev/Brave-Enough/issues"
+  },
+  "homepage": "https://github.com/IvoKarapeev/Brave-Enough#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
