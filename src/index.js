@@ -5,6 +5,8 @@ const router = require('./routes');
 
 const app = express();
 
+require('../config/handlebars')(app);
+
 app.use(router);
 
 initizeDatabase()
