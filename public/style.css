@@ -83,6 +83,21 @@ img.cardImage{
 .dropdown li:hover {
     background-color: #4c9e9e;
 }
-   .services:hover .dropdown {
+.services:hover .dropdown {
     display: block;
+}
+
+.homeSection{
+    background-image: url('./images/home-background.png');
+    width: 1905px;
+    height: 800px;
+}
+
+.welcome-text{
+    position: absolute;
+    color:#fff;
+    font-family:initial;
+    font-size: 45px;
+    top: 350px;
+    left: 1150px;
 }
