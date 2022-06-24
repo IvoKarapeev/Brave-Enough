@@ -28,15 +28,16 @@ hr {
 }
 
 .loginbtn {
-  /* background-color: #04AA6D; */
-  background-color: rgb(1, 139, 139);
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+    background-color:rgb(177, 214, 250);
+    color: rgb(14, 14, 14);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
 
 .loginbtn:hover {
