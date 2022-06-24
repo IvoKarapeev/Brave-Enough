@@ -20,10 +20,10 @@
             <!-- NAVIGATION MENUS -->
             <div class="menu">
                 <li><a href="/">Brave Enough</a></li>
-                <li><a href="/">About</a></li>
+                <li><a href="/about">About</a></li>
                 {{#if user}}
                     <li class="services">
-                        <a href="/">Services</a>
+                        <a>Services</a>
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
                             <li><a href="/">See All Adventures </a></li>
@@ -33,10 +33,10 @@
                             <li><a href="/">Dropdown 4</a></li> --}}
                         </ul>
                     </li>
-                    <li><a href="/">Logout</a></li>
+                    <li><a href="/users/logout">Logout</a></li>
                 {{else}}
-                <li><a href="/">Login</a></li>
-                <li><a href="/">Register</a></li>
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/users/register">Register</a></li>
                 {{/if}}
             </div>
         </ul>
