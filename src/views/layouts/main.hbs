@@ -14,27 +14,30 @@
 
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo">Brave Enough</div>
+        <div class="logo"></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
             <!-- NAVIGATION MENUS -->
             <div class="menu">
-                <li><a href="/">Home</a></li>
+                <li><a href="/">Brave Enough</a></li>
                 <li><a href="/">About</a></li>
-                <li class="services">
-                    <a href="/">Services</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li><a href="/">See All Adventures </a></li>
-                        <li><a href="/">Create Adventure</a></li>
-                        {{!-- <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 3</a></li>
-                        <li><a href="/">Dropdown 4</a></li> --}}
-                    </ul>
-                </li>
+                {{#if user}}
+                    <li class="services">
+                        <a href="/">Services</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">See All Adventures </a></li>
+                            <li><a href="/">Create Adventure</a></li>
+                            {{!-- <li><a href="/">Dropdown 2</a></li>
+                            <li><a href="/">Dropdown 3</a></li>
+                            <li><a href="/">Dropdown 4</a></li> --}}
+                        </ul>
+                    </li>
+                    <li><a href="/">Logout</a></li>
+                {{else}}
                 <li><a href="/">Login</a></li>
                 <li><a href="/">Register</a></li>
-                <li><a href="/">Logout</a></li>
+                {{/if}}
             </div>
         </ul>
     </nav>
