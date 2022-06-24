@@ -119,5 +119,35 @@ img.cardImage {
     left: 1150px;
 }
 
+/* registration css */
+.form-register {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 253, 253);
+}
+ 
 
 
+.form-register input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-register hr {
+    border: 10px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
