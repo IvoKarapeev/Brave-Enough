@@ -1,6 +1,13 @@
 * {box-sizing: border-box}
 
+.form-section{
+   background-image: url('../images/background-section.png');
+   width: 1900px;
+   height: 820px;
+}
+
 .container {
+  background-color: rgb(255, 255, 255);
   padding: 16px;
   position: absolute;
   top: 200px;
