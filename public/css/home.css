@@ -19,11 +19,11 @@
 }
 
 
-.home-card1 {
+/* .home-card1 {
     position: absolute;
     top: 700px;
     left: 80px;
-}
+} */
 
 img.cardImage {
     border: 4mm ridge rgba(211, 220, 50, .6);
