@@ -3,7 +3,9 @@ const userService = require('../services/userService');
 
 
 router.get('/login',async (req,res) => {
-    res.render('user/login');
+    const style = 'login.css'
+
+    res.render('user/login', { style });
 });
 
 router.post('/login',async (req,res) => {
@@ -13,7 +15,8 @@ router.post('/login',async (req,res) => {
 });
 
 router.get('/register',async (req,res) => {
-    res.render('user/register');
+    const style = 'registration.css'
+    res.render('user/register',{ style });
 });
 
 router.post('/register',async (req,res) => {
