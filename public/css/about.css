@@ -47,11 +47,6 @@
     text-align: center;
 }
 
-.about{
-    text-align:center;
-    font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-};
 
 .navbar {
     display: flex;
@@ -126,3 +121,8 @@
     display: block;
 }
 
+.about{
+    text-align:center;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+};
