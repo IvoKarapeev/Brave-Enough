@@ -57,4 +57,11 @@ router.post('/register',async (req,res) => {
     };
 });
 
+
+router.get('/logout',async (req,res) => {
+   
+    res.clearCookie(COOKIE_SESSION_USER);
+    res.redirect('/');
+});
+
 module.exports = router;
