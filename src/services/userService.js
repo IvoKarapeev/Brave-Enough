@@ -39,5 +39,22 @@ exports.createToken = (user) => {
         })
     });
 
-}
+};
+
+exports.login = async (email, password) => {
+
+    const user = await User.findOne({email});
+
+    if (!user) {
+        throw { error: 'Cannot find user!' }
+    };
+
+    const isAuntenticated = await bcrypt.compare(password,user.password);
+
+    if (!isAuntenticated) {
+        throw { error: 'Wrong username or password!' }
+    };
+
+    return user;
+};
 

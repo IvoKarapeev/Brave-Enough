@@ -11,7 +11,21 @@ router.get('/login',async (req,res) => {
 
 router.post('/login',async (req,res) => {
     
+    const { email,password } = req.body;
 
+    try {
+        
+        const user = await userService.login(email,password);
+        const token = await userService.createToken(user);
+
+        res.cookie(COOKIE_SESSION_USER, token, {httpOnly:true} );
+        res.redirect('/');
+
+    } catch (error) {
+        
+        console.log(error);
+
+    }
 
 });
 
@@ -40,10 +54,7 @@ router.post('/register',async (req,res) => {
         
         console.log(error);
 
-    }
-
-    res.redirect('/')
-
+    };
 });
 
 module.exports = router;
