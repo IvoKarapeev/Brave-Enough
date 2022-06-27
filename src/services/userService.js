@@ -1,4 +1,7 @@
 const User = require('../models/User');
+const jwt = require('jsonwebtoken');
+const { SALT_ROUNDS,SECRET } =require('../../config/env')
+
 
 exports.create = async (userData) => {
 
@@ -11,5 +14,21 @@ exports.create = async (userData) => {
     const user = await User.create(userData);
 
     return user;
+};
+
+exports.createToken = (user) => {
+    const payload = {_id: user._id , email: user.email};
+    const option = { expiresIn: '2d' }
+    return new Promise((resolve,reject) => {
+        jwt.sign( payload, SECRET, option ,(err,decodedToken) => {
+
+            if (err) {
+                return reject(err);
+            }
+
+            resolve(decodedToken);
+        })
+    });
+
 }
 
