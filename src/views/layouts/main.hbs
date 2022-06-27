@@ -22,19 +22,8 @@
                 <li><a href="/">Brave Enough</a></li>
                 <li><a href="/adventures/all">Adventures</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/profile">{{user.email}}</a></li>
                 {{#if user}}
-                    <li class="services">
-                        <a>Services</a>
-                        <!-- DROPDOWN MENU -->
-                        <ul class="dropdown">
-                            <li><a href="/">See All Adventures </a></li>
-                            {{!-- <li><a href="/">Create Adventure</a></li> --}}
-                            {{!-- <li><a href="/">Dropdown 2</a></li>
-                            <li><a href="/">Dropdown 3</a></li>
-                            <li><a href="/">Dropdown 4</a></li> --}}
-                        </ul>
-                    </li>
+                <li><a href="/profile">{{user.email}}</a></li>
                     <li><a href="/users/logout">Logout</a></li>
                 {{else}}
                     <li><a href="/users/login">Login</a></li>
