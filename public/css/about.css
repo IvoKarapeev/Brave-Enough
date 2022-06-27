@@ -1,3 +1,58 @@
+.water{
+    position: absolute;
+    top: 1300px;
+    left: 550px;
+    width: 300px;
+    height: 400px; 
+}
+
+.end{
+    font-size: 25px;
+    position: absolute;
+    top: 1400px;
+    left: 950px;
+    width: 300px;
+}
+
+.ballon{
+    position: absolute;
+    top: 850px;
+    left: 950px;
+    width: 300px;
+}
+
+.middle{
+    font-size: 25px;
+    position: absolute;
+    top: 900px;
+    left: 550px;
+    width: 300px;
+    height: 400px; 
+}
+
+.canou{
+    position: absolute;
+    top: 400px;
+    left: 550px;
+    width: 300px;
+    height: 400px;
+}
+
+.begining{
+    font-size: 25px;
+    position: absolute;
+    top: 400px;
+    left: 950px;
+    width: 300px;
+    text-align: center;
+}
+
+.about{
+    text-align:center;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+};
+
 .navbar {
     display: flex;
     align-items: center;
@@ -71,12 +126,3 @@
     display: block;
 }
 
-.about{
-    text-align:center;
-    font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-};
-
-.begining{
-    text-align: center;
-}
