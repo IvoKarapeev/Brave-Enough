@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const userService = require('../services/userService');
+const { COOKIE_SESSION_USER } = require('../../config/env')
 
 
 router.get('/login',async (req,res) => {
@@ -32,11 +33,13 @@ router.post('/register',async (req,res) => {
         const user = await userService.create(email,password);
         const token = await userService.createToken(user);
 
-        
-    
+        res.cookie(COOKIE_SESSION_USER, token, {httpOnly:true});
+        res.redirect('/');
         
     } catch (error) {
         
+        console.log(error);
+
     }
 
     res.redirect('/')
