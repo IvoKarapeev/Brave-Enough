@@ -1,15 +1,24 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt')
 const { SALT_ROUNDS,SECRET } =require('../../config/env')
 
 
-exports.create = async (userData) => {
+exports.create = async (email,password) => {
 
-    if (userData.password.length < 4) {
+    if (password.length < 4) {
         throw {
             error:'Password shoud be atleast 4 characters long!'
         };
-    }
+    };
+
+
+    password = await bcrypt.hash(password,SALT_ROUNDS);
+
+    const userData = {
+        email,
+        password
+    };
 
     const user = await User.create(userData);
 

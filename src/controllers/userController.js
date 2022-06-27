@@ -28,7 +28,16 @@ router.post('/register',async (req,res) => {
         return res.render('user/register')
     };
 
-    await userService.create(email,password);
+    try {
+        const user = await userService.create(email,password);
+        const token = await userService.createToken(user);
+
+        
+    
+        
+    } catch (error) {
+        
+    }
 
     res.redirect('/')
 
