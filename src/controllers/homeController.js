@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 
 router.get('/',async (req,res) => {
-    const style = 'home.css'
+    const style = 'home.css';
     res.render('home', {style});
 });
 
