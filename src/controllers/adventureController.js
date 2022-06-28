@@ -4,10 +4,9 @@ const adventureService = require('../services/adventureService');
 router.get('/all',async (req,res) => {
 
     const adventures = await adventureService.getAll();
+    const style = 'adventures.css';
 
-    console.log(adventures);
-
-    res.send('Adventures Here')
+    res.render('adventure/all-adventures', { style });
 
 });
 
