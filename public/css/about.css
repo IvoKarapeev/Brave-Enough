@@ -20,7 +20,7 @@ body{
 
 .ballon{
     position: absolute;
-    top: 850px;
+    top: 750px;
     left: 1350px;
     width: 300px;
 }
@@ -36,7 +36,7 @@ body{
 
 .canou{
     position: absolute;
-    top: 400px;
+    top: 300px;
     left: 250px;
     width: 300px;
     height: 400px;
@@ -45,7 +45,7 @@ body{
 .begining{
     font-size: 30px;
     position: absolute;
-    top: 450px;
+    top: 350px;
     left: 650px;
     width: 1000px;
     text-align: center;
@@ -55,7 +55,7 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background-color: rgb(255, 255, 255);
     color: rgb(36, 131, 190);
 }
