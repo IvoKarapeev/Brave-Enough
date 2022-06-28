@@ -2,7 +2,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   background-color: rgb(255, 255, 255);
   color: rgb(36, 131, 190);
 }
@@ -17,9 +17,16 @@
 .logo {
   display: block;
   text-align: center;
-  background-image: url("../images//Logo.png");
   height: 80px;
   width: 130px;
+}
+
+.braveEng {
+  display: block;
+  text-align: center;
+  /* background-image: url("../images/imageOfText.png"); */
+  height: 50px;
+  width: 300px;
 }
 
 /* NAVBAR MENU */
