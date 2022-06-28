@@ -2,11 +2,11 @@ const router = require('express').Router();
 const adventureService = require('../services/adventureService');
 
 router.get('/all',async (req,res) => {
-
-    const adventures = await adventureService.getAll();
+    
     const style = 'adventures.css';
+    const adventures = await adventureService.getAll().lean();
 
-    res.render('adventure/all-adventures', { style });
+    res.render('adventure/all-adventures', { style,adventures });
 
 });
 
