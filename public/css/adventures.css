@@ -65,6 +65,7 @@ p
 
 .property-image
 {
+  background-color:#f2f2f2;
   height:6em;
   width:14em;
   padding:1em 2em;
@@ -98,12 +99,14 @@ p
 
 .property-social-icons
 {
-  width:1em;
+  width:4em;
   height:1em;
-  background-color:black;
+  background-color:rgb(158, 179, 203);
+  color: #0660ba;
+  text-align: center;
   position:absolute;
   bottom:1em;
-  left:1em;
+  left:4.5em;
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -128,7 +131,7 @@ p
 
 .property-card:hover .property-social-icons:hover
 {
-  background-color:blue;
+  background-color:rgb(123, 170, 239);
   cursor:pointer;
 }
 
