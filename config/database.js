@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-const url = 'mongodb://localhost:27017/Adventures';
+const url = 'mongodb+srv://Ivo:CodingIsGood123@ivocorp.meizoti.mongodb.net/test';
 
 exports.initizeDatabase = () => mongoose.connect(url);
