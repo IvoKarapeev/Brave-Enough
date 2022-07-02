@@ -27,22 +27,26 @@ p
 {
   height:30vh;
   width:30%;
-  /* display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */ 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
 }
 
 .main{
-    margin: 100px;
+    margin-top: 100px;
+    /* margin-right: 10px; */
+    margin-left: 100px;
     display: flex;
-    justify-content: space-evenly;
+    height: 1000px;
+    /* justify-content: space-evenly; */
+    flex-wrap:wrap;
 }
 /* End Non-Essential  */
 
 .property-card
 {
-  height:18em;
-  width:14em;
+  height:22em;
+  width:20em;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -66,8 +70,8 @@ p
 .property-image
 {
   background-color:#f2f2f2;
-  height:6em;
-  width:14em;
+  height:10em;
+  width:20em;
   padding:1em 2em;
   position:Absolute;
   top:0px;
@@ -85,7 +89,7 @@ p
 {
   background-color: #FAFAFC;
   height:12em;
-  width:14em;
+  width:20em;
   position:absolute;
   bottom:0em;
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -121,7 +125,7 @@ p
 }
 .property-card:hover .property-image
 {
-  height:18em;
+  height:22em;
 }
 
 .property-card:hover .property-social-icons
