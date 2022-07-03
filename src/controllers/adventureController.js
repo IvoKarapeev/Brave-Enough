@@ -73,7 +73,6 @@ router.get('/join/:adventureId', isAuth ,async (req,res) => {
         res.render('home', { style,error:error });
         
     }
-        
 });
 
 module.exports = router;
