@@ -8,5 +8,9 @@ const router = express.Router();
 router.use('/',homeController);
 router.use('/users',userController);
 router.use('/adventures',adventureController);
+router.use('*',(req,res) => {
+    res.send('Wrong url')
+});
+
 
 module.exports = router;
