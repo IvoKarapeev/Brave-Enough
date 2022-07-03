@@ -38,10 +38,11 @@ router.get('/register',isGuest,async (req,res) => {
 router.post('/register',isGuest,async (req,res) => {
     
     const { email,password,repeatPassword } = req.body
+    const style = 'home.css';
 
     if (password !== repeatPassword) {
         //error for the password
-        return res.render('user/register')
+        return res.render('home',{ style,error:'Passwords shoud be equal '})
     };
 
     try {
@@ -52,9 +53,13 @@ router.post('/register',isGuest,async (req,res) => {
         res.redirect('/');
         
     } catch (error) {
-        
-        console.log(error);
+        if (error.error) {
+            
+            res.render('home',{ style, error:error.error })
+        }else {
 
+            res.render('home',{style,error})
+        };
     };
 });
 

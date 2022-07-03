@@ -12,7 +12,6 @@ exports.create = async (email,password) => {
         };
     };
 
-
     password = await bcrypt.hash(password,SALT_ROUNDS);
 
     const userData = {
