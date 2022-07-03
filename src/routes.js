@@ -9,7 +9,9 @@ router.use('/',homeController);
 router.use('/users',userController);
 router.use('/adventures',adventureController);
 router.use('*',(req,res) => {
-    res.send('Wrong url')
+    const style = '404.css';
+    
+    res.render('404',{ style });
 });
 
 
