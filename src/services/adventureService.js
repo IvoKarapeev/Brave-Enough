@@ -4,4 +4,4 @@ exports.getAll = () => Adventure.find();
 
 exports.create = (data) => Adventure.create(data);
 
-exports.getOneDetailed = (id) => Adventure.findById(id);
+exports.getOneDetailed = (id) => Adventure.findById(id).populate('joined');

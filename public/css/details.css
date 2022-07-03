@@ -18,7 +18,7 @@ background-color: #bde1fc;
   
 .card {
 position: relative;
-background: #333;
+background: rgb(11, 110, 159);
 width: 400px;
 height: 75vh;
 border-radius: 6px;
@@ -30,7 +30,7 @@ overflow: hidden;
 }  
 
 .card__image{
-    height:350px;
+    height:250px;
     width: 350px;
 }
 
