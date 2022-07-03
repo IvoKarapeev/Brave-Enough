@@ -37,7 +37,7 @@ router.get('/details/:adventureId',async (req,res) => {
 
     const style = 'details.css';
 
-    res.render('adventure/details',{ style });
+    res.render('adventure/details',{ style,adventure });
 
 });
 
