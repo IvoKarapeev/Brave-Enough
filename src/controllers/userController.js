@@ -77,4 +77,10 @@ router.get('/logout',isAuth,async (req,res) => {
     res.redirect('/');
 });
 
+router.get('/profile',isAuth,async (req,res) => {
+   
+    
+
+});
+
 module.exports = router;
