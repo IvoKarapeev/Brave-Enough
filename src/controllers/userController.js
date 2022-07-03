@@ -79,7 +79,9 @@ router.get('/logout',isAuth,async (req,res) => {
 
 router.get('/profile',isAuth,async (req,res) => {
    
+    const style = 'profile.css';
     
+    res.render('user/profile',{ style });
 
 });
 
