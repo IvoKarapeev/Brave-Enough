@@ -1,15 +1,16 @@
 const router = require('express').Router();
 const userService = require('../services/userService');
-const { COOKIE_SESSION_USER } = require('../../config/env')
+const { COOKIE_SESSION_USER } = require('../../config/env');
+const { isGuest } = require('../middlewares/userMiddleware');
 
 
-router.get('/login',async (req,res) => {
+router.get('/login',isGuest,async (req,res) => {
     const style = 'login.css'
 
     res.render('user/login', { style });
 });
 
-router.post('/login',async (req,res) => {
+router.post('/login',isGuest,async (req,res) => {
     
     const { email,password } = req.body;
 
