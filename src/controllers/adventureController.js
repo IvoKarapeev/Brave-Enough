@@ -61,8 +61,9 @@ router.get('/details/:adventureId',async (req,res) => {
 
 router.get('/join/:adventureId',async (req,res) => {
 
-    
+    const adventure = await adventureService.joinAdventure(req.params.adventureId,req.user._id);
 
+    res.redirect(`/adventures/details/${req.params.adventureId}`);
 });
 
 module.exports = router;
