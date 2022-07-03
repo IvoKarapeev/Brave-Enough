@@ -38,10 +38,10 @@ router.get('/details/:adventureId',async (req,res) => {
     const places = adventure.places;
 
     // console.log(req.user);
-
+    const user = req.user;
     const style = 'details.css';
 
-    res.render('adventure/details',{ style,adventure,places });
+    res.render('adventure/details',{ style,adventure,places,user });
 
 });
 

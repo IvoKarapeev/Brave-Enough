@@ -8,7 +8,9 @@
        <h1 class="card__title">{{adventure.name}}</h1>
      <p>{{adventure.description}}</p>
      <p>Price: {{adventure.price}}</p>
+     {{#if user}}
      <a href="/adventures/join/{{adventure._id}}" class="joinBtn">Join</a>
+     {{/if}}
     </div>
   </div>
 </div>
