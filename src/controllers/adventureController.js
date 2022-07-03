@@ -62,9 +62,17 @@ router.get('/details/:adventureId',async (req,res) => {
 
 router.get('/join/:adventureId', isAuth ,async (req,res) => {
 
-    const adventure = await adventureService.joinAdventure(req.params.adventureId,req.user._id);
-
-    res.redirect(`/adventures/details/${req.params.adventureId}`);
+    // try {
+        // const adventure = await adventureService.joinAdventure(req.params.adventureId,req.user._id);
+        const error = 'asd';
+        const style = 'home.css'
+        res.render('home', { style,error:error })
+        // res.redirect(`/adventures/details/${req.params.adventureId}`);
+        
+    // } catch (error) {
+        
+    // }
+        
 });
 
 module.exports = router;
