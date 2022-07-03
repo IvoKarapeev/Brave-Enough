@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const adventureService = require('../services/adventureService');
+const { isAuth } = require('../middlewares/userMiddleware');
 
 router.get('/all',async (req,res) => {
     
@@ -59,7 +60,7 @@ router.get('/details/:adventureId',async (req,res) => {
 });
 
 
-router.get('/join/:adventureId',async (req,res) => {
+router.get('/join/:adventureId', isAuth ,async (req,res) => {
 
     const adventure = await adventureService.joinAdventure(req.params.adventureId,req.user._id);
 
