@@ -14,13 +14,14 @@ router.get('/all',async (req,res) => {
 router.post('/create',async (req,res) => {
 
    
-    const { name, image, description, price } = req.body;
+    const { name, image, description, price, places } = req.body;
 
     const adventureData = { 
         name,
         image,
         description,
-        price
+        price,
+        places
     };
 
     await adventureService.create(adventureData);

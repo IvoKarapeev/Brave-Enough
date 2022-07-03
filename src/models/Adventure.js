@@ -18,7 +18,11 @@ const adventureSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    places:[{
+    places:{
+        type:Number,
+        required:true
+    },
+    joined:[{
         type: mongoose.Types.ObjectId,
         ref: 'User'
     }]
