@@ -13,6 +13,7 @@ router.get('/login',isGuest,async (req,res) => {
 router.post('/login',isGuest,async (req,res) => {
     
     const { email,password } = req.body;
+    const style = 'home.css';
 
     try {
         
@@ -24,7 +25,13 @@ router.post('/login',isGuest,async (req,res) => {
 
     } catch (error) {
         
-        console.log(error);
+        if (error.error) {
+            
+            res.render('home',{ style, error:error.error })
+        }else {
+
+            res.render('home',{style,error})
+        };
 
     }
 
