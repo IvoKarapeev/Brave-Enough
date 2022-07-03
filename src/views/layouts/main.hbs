@@ -36,6 +36,13 @@
             </div>
         </ul>
     </nav>
+
+    {{#if error}}
+        <div class="error-container">
+            <p>{{error}}</p>
+        </div>
+    {{/if}}
+
     {{{body}}}
 </body>
 
