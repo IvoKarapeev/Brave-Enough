@@ -1,0 +1,25 @@
+<div class="main">
+
+    {{#if adventures}}
+        {{#each adventures}}
+            <div class="center">
+                <div class="property-card">
+                <a href="/adventures/details/{{_id}}">
+                <img src="{{image}}" class="property-image">
+                    <div class="property-image-title">
+                    </div>
+                </img></a>
+                <div class="property-description">
+                <h5> {{name}} </h5>
+                <p>{{description}}</p>
+                </div>
+                <a href="/adventures/details/{{_id}}">
+                </a>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <h3>There are still no adventures</h3>
+    {{/if}}
+
+</div>
