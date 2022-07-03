@@ -4,6 +4,20 @@ line-height: 1.5;
 font-family: 'Open Sans', sans-serif;
 }
 
+.joinBtn{
+    color: #0c0c0c;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(226, 235, 242);
+    font-size: 23px;
+    width: 300px;
+    position: absolute;
+    top: 615px;
+    left: 50px;
+}
+
 img {
 max-width: 100%;
 }
@@ -33,10 +47,6 @@ overflow: hidden;
     height:250px;
     width: 350px;
 }
-
-.price{
-    font-size: 22px;
-};
 
 .navbar {
     display: flex;
