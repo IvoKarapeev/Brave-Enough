@@ -30,12 +30,12 @@ router.post('/login',isGuest,async (req,res) => {
 
 });
 
-router.get('/register',async (req,res) => {
+router.get('/register',isGuest,async (req,res) => {
     const style = 'registration.css'
     res.render('user/register',{ style });
 });
 
-router.post('/register',async (req,res) => {
+router.post('/register',isGuest,async (req,res) => {
     
     const { email,password,repeatPassword } = req.body
 
