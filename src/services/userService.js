@@ -57,4 +57,4 @@ exports.login = async (email, password) => {
     return user;
 };
 
-exports.getOneDetailed = (userId) => User.findById(userId).populate('adventures');
+exports.getOneAdventures = (userId) => User.findById(userId).populate('adventures');

@@ -17,6 +17,7 @@ exports.joinAdventure = async (adventureId,userId) => {
     user.adventures.push(adventure);
 
     await adventure.save();
+    await user.save();
 
     return adventure;
 }

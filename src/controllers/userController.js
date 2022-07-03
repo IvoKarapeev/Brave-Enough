@@ -80,8 +80,13 @@ router.get('/logout',isAuth,async (req,res) => {
 router.get('/profile',isAuth,async (req,res) => {
    
     const style = 'profile.css';
-    
-    res.render('user/profile',{ style });
+    const userId = req.user._id;
+    const user = await userService.getOneAdventures(userId).lean();
+    const adventures = user.adventures
+
+    console.log(user);
+
+    res.render('user/profile',{ style,adventures });
 
 });
 
