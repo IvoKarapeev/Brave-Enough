@@ -35,7 +35,9 @@ router.get('/details/:adventureId',async (req,res) => {
     const adventureId = req.params.adventureId;
     const adventure = await adventureService.getOneDetailed(adventureId).lean();
 
-    console.log(adventure);
+    const style = 'details.css';
+
+    res.render('adventure/details',{ style });
 
 });
 
