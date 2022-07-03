@@ -59,4 +59,10 @@ router.get('/details/:adventureId',async (req,res) => {
 });
 
 
+router.get('/join/:adventureId',async (req,res) => {
+
+    
+
+});
+
 module.exports = router;
