@@ -4,7 +4,7 @@ line-height: 1.5;
 font-family: 'Open Sans', sans-serif;
 }
 
-.joined{
+.hasPlaces{
     color: #0c0c0c;
     display:flex;
     text-align: center;
@@ -12,6 +12,21 @@ font-family: 'Open Sans', sans-serif;
     border: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(219, 78, 73);
+    font-size: 23px;
+    width: 300px;
+    position: absolute;
+    top: 615px;
+    left: 50px; 
+}
+
+.joined{
+    color: #000000;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(103, 204, 104);
     font-size: 23px;
     width: 300px;
     position: absolute;
@@ -29,7 +44,7 @@ font-family: 'Open Sans', sans-serif;
     font-size: 23px;
     width: 300px;
     position: absolute;
-    top: 615px;
+    top: 620px;
     left: 50px;
 }
 

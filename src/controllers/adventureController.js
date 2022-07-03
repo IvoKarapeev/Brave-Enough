@@ -37,20 +37,24 @@ router.get('/details/:adventureId',async (req,res) => {
     const adventure = await adventureService.getOneDetailed(adventureId).lean();
     const joined = adventure.joined;
     let isJoined = false;
+    let hasPlaces = false;
 
-    // console.log(req.user);
     if (req.user) {        
         joined.forEach(adventurer => {
             if (adventurer._id == req.user._id) {
                 isJoined = true;
             }
         });
+    };
+
+    if (adventure.places > 0) {
+        hasPlaces = true;
     }
 
     const user = req.user;
     const style = 'details.css';
 
-    res.render('adventure/details',{ style,adventure,user,isJoined });
+    res.render('adventure/details',{ style,adventure,user,isJoined,hasPlaces });
 
 });
 

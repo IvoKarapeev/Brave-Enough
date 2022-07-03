@@ -10,9 +10,13 @@
             <p>Price: {{adventure.price}}</p>
             {{#if user}}
                 {{#if isJoined}}
-                    <div class="joined">You are already joined for this Adventure</div>
+                    <div class="joined">You are already joined for this Adventure.</div>
                 {{else}}
+                    {{#if hasPlaces}}
                     <a href="/adventures/join/{{adventure._id}}" class="joinBtn">Join</a>
+                    {{else}}
+                        <div class="hasPlaces">There are no more places.</div>
+                    {{/if}}
                 {{/if}}
             {{/if}}
         </div>
