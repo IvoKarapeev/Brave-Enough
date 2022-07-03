@@ -4,6 +4,21 @@ line-height: 1.5;
 font-family: 'Open Sans', sans-serif;
 }
 
+.joined{
+    color: #0c0c0c;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(219, 78, 73);
+    font-size: 23px;
+    width: 300px;
+    position: absolute;
+    top: 615px;
+    left: 50px; 
+}
+
 .joinBtn{
     color: #0c0c0c;
     display:flex;
@@ -32,7 +47,7 @@ background-color: #bde1fc;
   
 .card {
 position: relative;
-background: rgb(11, 110, 159);
+background: rgb(56, 122, 156);
 width: 400px;
 height: 75vh;
 border-radius: 6px;
