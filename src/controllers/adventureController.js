@@ -30,5 +30,14 @@ router.post('/create',async (req,res) => {
 });
 
 
+router.get('/details/:adventureId',async (req,res) => {
+    
+    const adventureId = req.params.adventureId;
+    const adventure = await adventureService.getOneDetailed(adventureId).lean();
+
+    console.log(adventure);
+
+});
+
 
 module.exports = router;
